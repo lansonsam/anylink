@@ -1,9 +1,0 @@
-HTTP/1.1 304 Not Modified
-Connection: close
-Age: 2796
-Cache-Control: public, max-age=3000
-Date: Fri, 04 Jul 2025 11:14:03 GMT
-Expires: Fri, 04 Jul 2025 12:04:03 GMT
-Last-Modified: Thu, 03 Apr 2025 14:18:00 GMT
-Vary: Accept-Encoding
-

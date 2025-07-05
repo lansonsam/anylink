@@ -1,7 +1,0 @@
-GET /msdownload/update/v3/static/trustedr/en/pinrulesstl.cab?ddafffa7b0361343 HTTP/1.1
-Accept: */*
-If-Modified-Since: Fri, 02 Jun 2017 17:39:05 GMT
-If-None-Match: "80424021c7dbd21:0"
-User-Agent: Microsoft-CryptoAPI/10.0
-Host: ctldl.windowsupdate.com
-
