@@ -1,0 +1,154 @@
+#示例配置信息
+
+#其他配置文件,可以使用绝对路径
+#或者相对于 anylink 二进制文件的路径
+
+#数据文件
+db_type = "sqlite3"
+db_source = "./conf/anylink.db"
+#证书文件 使用跟nginx一样的证书即可
+cert_file = "./conf/vpn_cert.pem"
+cert_key = "./conf/vpn_cert.key"
+files_path = "./conf/files"
+profile = "./conf/profile.xml"
+#profile name(用于区分不同服务端的配置)
+#客户端存放位置
+#Windows 10
+#%ProgramData%Cisco\Cisco AnyConnect Secure Mobility Client\Profile
+#Mac Os X
+#/opt/cisco/anyconnect/profile
+#Linux
+#/opt/cisco/anyconnect/profile
+profile_name = "anylink"
+#日志目录,默认为空写入标准输出
+#log_path = "./log"
+log_path = ""
+log_level = "debug"
+pprof = true
+
+#系统名称
+issuer = "XX公司VPN"
+#后台管理用户
+admin_user = "admin"
+#pass 123456
+admin_pass = "$2a$10$UQ7C.EoPifDeJh6d8.31TeSPQU7hM/NOM2nixmBucJpAuXDQNqNke"
+# 留空表示不开启 otp, 开启otp后密码为  pass + 6位otp
+# 生成 ./anylink tool -o
+admin_otp = ""
+jwt_secret = "abcdef.0123456789.abcdef"
+
+
+#TCP服务监听地址(任意端口)
+server_addr = ":443"
+#开启 DTLS
+server_dtls = false
+#UDP监听地址(任意端口)
+server_dtls_addr = ":443"
+#DTLS对外映射端口(为空则与server_dtls_addr相同)
+advertise_dtls_addr = ""
+#后台服务监听地址
+admin_addr = ":8800"
+#开启tcp proxy protocol协议
+proxy_protocol = false
+
+#开启go标准库http.Server的日志
+http_server_log=false
+
+#虚拟网络类型[tun macvtap tap]
+link_mode = "tun"
+
+#客户端分配的ip地址池
+#docker环境一般默认 eth0，其他情况根据实际网卡信息填写
+ipv4_master = "eth0"
+ipv4_cidr = "192.168.90.0/24"
+ipv4_gateway = "192.168.90.1"
+ipv4_start = "192.168.90.100"
+ipv4_end = "192.168.90.200"
+
+#最大客户端数量
+max_client = 200
+#单个用户同时在线数量
+max_user_client = 3
+#IP租期(秒)
+ip_lease = 86400
+
+#默认选择的组
+default_group = "one"
+
+#客户端失效检测时间(秒) dpd > keepalive
+cstp_keepalive = 3
+cstp_dpd = 20
+mobile_keepalive = 4
+mobile_dpd = 60
+
+# 根据实际情况修改
+#cstp_keepalive = 20
+#cstp_dpd = 30
+#mobile_keepalive = 40
+#mobile_dpd = 60
+
+#设置最大传输单元
+mtu = 1460
+
+# 客户端dns的默认搜索域
+default_domain = "example.com"
+#default_domain = "example.com abc.example.com"
+
+#空闲链接超时时间(秒)-超时后断开链接，0关闭此功能
+idle_timeout = 0
+#session过期时间，用于断线重连，0永不过期
+session_timeout = 3600
+#auth_timeout = 0
+audit_interval = 600
+
+show_sql = false
+
+#是否自动添加nat
+iptables_nat = true
+
+#启用压缩
+compression = false
+#低于及等于多少字节不压缩
+no_compress_limit = 256
+
+#客户端显示详细错误信息(线上环境慎开启)
+display_error = false
+
+#排除出口ip路由(出口ip不加密传输)
+exclude_export_ip = true
+
+#登录单独验证OTP窗口
+auth_alone_otp = false
+
+#加密保存用户密码
+encryption_password = false
+
+#防爆破全局开关
+anti_brute_force = true
+#全局IP白名单,多个用逗号分隔，支持单IP和CIDR范围
+ip_whitelist = "192.168.90.1,172.16.0.0/24"
+
+#锁定时间最好不要超过单位时间
+#单位时间内最大尝试次数，0为关闭该功能
+max_ban_score = 5
+#设置单位时间(秒)，超过则重置计数
+ban_reset_time = 600
+#超过最大尝试次数后的锁定时长(秒)
+lock_time = 300
+
+#全局用户单位时间内最大尝试次数,0为关闭该功能
+max_global_user_ban_count = 20
+#全局用户设置单位时间(秒)
+global_user_ban_reset_time = 600
+#全局用户锁定时间(秒)
+global_user_lock_time = 300
+
+#全局IP单位时间内最大尝试次数，0为关闭该功能
+max_global_ip_ban_count = 40
+#全局IP设置单位时间(秒)
+global_ip_ban_reset_time = 1200
+#全局IP锁定时间(秒)
+global_ip_lock_time = 300
+
+#全局锁定状态的保存生命周期(秒),超过则删除记录
+global_lock_state_expiration_time = 3600

@@ -1,0 +1,19 @@
+# Binaries for programs and plugins
+.idea/
+anylink-deploy
+anylink-deploy.tar.gz
+anylink-deploy-*
+anylink
+anylink.db
+
+dist
+artifact-dist
+
+anylink_amd64
+anylink_arm64
+
+# Exclude specific directories
+venv/
+ssl_generate/
+qq group/
+index_template/

@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Server: Duo/1.0
+Date: Fri, 04 Jul 2025 12:00:55 GMT
+Content-Type: application/json
+Content-Length: 279
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000
+Content-Security-Policy: default-src 'self'; frame-src 'self' com-duosecurity-devicehealth://*; img-src 'self'  ; connect-src 'self'    https://127.0.0.1:53100 https://127.0.0.1:53101 https://127.0.0.1:53102 https://127.0.0.1:53103 https://127.0.0.1:53104 https://127.0.0.1:53105 https://127.0.0.1:63100 https://127.0.0.1:63101 http://127.0.0.1:53106 http://127.0.0.1:53107 http://127.0.0.1:53108 http://127.0.0.1:53109 http://127.0.0.1:53110 http://127.0.0.1:53111 https://localhost:53100 https://localhost:53101 https://localhost:53102 https://localhost:53103 https://localhost:53104 https://localhost:53105 https://localhost:63100 https://localhost:63101
+X-Content-Type-Options: nosniff
+
+{"stat": "OK", "response": {"status_enum": 13, "status_code": "pushed", "risk_based_factor_selection_data": {"step_up_code": "358", "auth_method_order": [{"deviceKey": "DP666BH22OLDGLW97741", "factor": "Duo Push"}, {"factor": "Duo Mobile Passcode"}, {"factor": "Bypass Code"}]}}}

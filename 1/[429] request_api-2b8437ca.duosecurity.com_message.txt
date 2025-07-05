@@ -1,0 +1,19 @@
+GET /oauth/v1/authorize?scope=openid&response_type=code&redirect_uri=https://cas.nau.edu/cas/login&client_id=DIWZY6SHYCS2SM9DP2AI&request=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJkdW9fdW5hbWUiOiJkbDI1ODciLCJzY29wZSI6Im9wZW5pZCIsInJlc3BvbnNlX3R5cGUiOiJjb2RlIiwicmVkaXJlY3RfdXJpIjoiaHR0cHM6Ly9jYXMubmF1LmVkdS9jYXMvbG9naW4iLCJzdGF0ZSI6IlRTVC0zMDAyNTBkZThlNTRiZmZmMzhiYWEyOWI5ODJlNGRkZjY0NmQiLCJleHAiOjE3NTE2MzQwNTEsInVzZV9kdW9fY29kZV9hdHRyaWJ1dGUiOnRydWUsImNsaWVudF9pZCI6IkRJV1pZNlNIWUNTMlNNOURQMkFJIn0.5arR9E872fPbxxCSDwZdIfQv4EsxwzIjMOwYat4W2Yao_JqwNAcccMS9qsyLzrKN7zgKkiWZAWmkwFR6WfrGFA HTTP/1.1
+Host: api-2b8437ca.duosecurity.com
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0 AnyConnect/5.1.8.122 (win)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+sec-ch-ua: "Chromium";v="138", "Microsoft Edge";v="138", "Microsoft Edge WebView2";v="138", "Not)A;Brand";v="8"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Referer: https://cas.nau.edu/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: trc|DUCZD59L3MSPCF907P7U|DAESK5E7QQFHS8V8E2UN=EPKKHLUX3LK9H2FPC4VK; hac|DUCZD59L3MSPCF907P7U|DAESK5E7QQFHS8V8E2UN="MTc1MTU3MTM5NA==|1751571394|13281d825c9c97412f755f44c2c47809a842bf60"; lam|DIWZY6SHYCS2SM9DP2AI|DUCZD59L3MSPCF907P7U=Duo_Push|DP666BH22OLDGLW97741
+

@@ -1,0 +1,21 @@
+HTTP/1.0 303 See Other
+Content-Type: text/html; charset=utf-8
+Content-Length: 0
+Content-Encoding: gzip
+Cache-Control: no-store
+Pragma: no-cache
+Connection: Keep-Alive
+Date: Fri, 04 Jul 2025 12:00:36 GMT
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob:; frame-ancestors 'self'; base-uri 'self'; block-all-mixed-content
+Set-Cookie: webvpnLang=en; path=/; secure
+Set-Cookie: webvpnlogin=1; path=/; secure
+Set-Cookie: CSRFtoken=; path=/; secure
+Location: https://shibboleth.nau.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fVHLbsIwEPyVyHfiJBAQFkEiECSkPlCpeuilMslGWHLs1Luh7d%2FXCaKih%2FY6u7Pz2AXKRrdi1dHJPMF7B0jBZ6MNimGQsc4ZYSUqFEY2gIJKcVjd34kkjETrLNnSanZD%2BZ8hEcGRsoYFu03G3tL1Jo%2BLKMm3s7goJkU8H4%2Fnq8k0n6ZRmhY5C17Aod%2FPmKd7EmIHO4MkDXkoStJRNBtFk%2Bc4EVEkxukrCzY%2BgzKSBtaJqEXBOZ7U8Wg10Ck0sguh6riqWu4T1EoD7w0m%2FAkq5aAkfjg8smBrXQlDMRmrpUbo5fc%2BgTrDFVku%2BsxisOWWV7EWjJGhAfrR6rc4trwBkpUkyf3g3JpRjy%2F47Y3F5SEPvrrdZm%2B1Kr96J42kv5uNw3hAVDWqh1XRGWyhVLWCigUrre3H2oEk75tcB4wvL6K%2FH7%2F8Bg%3D%3D&RelayState=ctx%3D2234726406%26relay_sig%3DK%252F%252BlzUExx0oDDXedn2hkpsFfV6Xh9GgGd%252Bvfr4SVjVw%253D&SigAlg=http%3A%2F%2Fwww.w3.org%2F2000%2F09%2Fxmldsig%23rsa-sha1&Signature=OJfjN4irjkXjroQhxwqlvNuPgLOfvzX%2BV2ijnfh0HaoDsQlbRPtGgaYAVVZKEHWrHQEGElIUsVbcjO4GXQSXteIoB27ovB%2BJ11cjVLY5KZe5X3F1VN%2FNFu%2BSoKLo4b64pgW0XEccQ%2BSNW33DOcew%2FuBJ9lY%2BEZ4TmtBKqdpZhRS5U6YghaJ81hEQoZnRqkydEJLTkeYB3kwchA4EOF%2BzGT8Pv5zyrD7vfGM%2F4eksUs%2FsMl0dSArdltpzZc5%2BRXP58NF9UtThud0sis0lVO%2F4b2OTiiqfz6GvTFBN2EY2aBiB4Zb8dK8p23l0D6Aw6w1A8FmvUGp3oxIB8WZhBHUZFQ%3D%3D&is_passive=NULL&entity_id=NULL
+Set-Cookie: acsamlcap=v2; path=/; secure
+Set-Cookie: tg=; path=/; secure
+Set-Cookie: acSamlv2Error=; path=/; secure
+

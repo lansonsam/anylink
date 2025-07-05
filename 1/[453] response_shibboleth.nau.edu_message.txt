@@ -1,0 +1,11 @@
+HTTP/1.1 404
+Content-Type: text/html;charset=utf-8
+Content-Language: zh-CN
+Content-Length: 728
+Date: Fri, 04 Jul 2025 12:01:07 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+Set-Cookie: NSC_wtsw_qse_tijccpmfui4-IUUQ-OpJQ=ffffffff857aaec545525d5f4f58455e445a4a4216cb;Version=1;Max-Age=120;path=/;secure;httponly
+Strict-Transport-Security: max-age=31536000
+
+<!doctype html><html lang="zh"><head><title>HTTP状态 404 - 未找到</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP状态 404 - 未找到</h1><hr class="line" /><p><b>类型</b> 状态报告</p><p><b>消息</b> The requested resource [&#47;favicon.ico] is not available</p><p><b>描述</b> 源服务器未能找到目标资源的表示或者是不愿公开一个已经存在的资源表示。</p><hr class="line" /><h3>Apache Tomcat/10.1.39</h3></body></html>

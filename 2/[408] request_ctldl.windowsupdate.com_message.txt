@@ -1,0 +1,7 @@
+GET /msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?2c5ad231a8a35866 HTTP/1.1
+Accept: */*
+If-Modified-Since: Thu, 05 Dec 2024 19:42:09 GMT
+If-None-Match: "06cfcc54d47db1:0"
+User-Agent: Microsoft-CryptoAPI/10.0
+Host: ctldl.windowsupdate.com
+

@@ -1,0 +1,13 @@
+h2 200
+server: nginx
+content-type: text/css
+content-length: 5
+last-modified: Fri, 13 Jun 2025 02:11:31 GMT
+etag: "684b88d3-5"
+cache-control: public, max-age=604800
+access-control-allow-origin: *
+cross-origin-resource-policy: cross-origin
+accept-ranges: bytes
+date: Fri, 04 Jul 2025 12:00:40 GMT
+
+/**/

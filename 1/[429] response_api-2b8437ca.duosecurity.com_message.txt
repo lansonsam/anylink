@@ -1,0 +1,11 @@
+HTTP/1.1 303 See Other
+Server: Duo/1.0
+Date: Fri, 04 Jul 2025 12:00:52 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+Location: /frame/frameless/v4/auth?sid=frameless-2783172f-cda3-4345-b9bb-fd6ab8b539a3&tx=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJkdW9fdW5hbWUiOiJkbDI1ODciLCJzY29wZSI6Im9wZW5pZCIsInJlc3BvbnNlX3R5cGUiOiJjb2RlIiwicmVkaXJlY3RfdXJpIjoiaHR0cHM6Ly9jYXMubmF1LmVkdS9jYXMvbG9naW4iLCJzdGF0ZSI6IlRTVC0zMDAyNTBkZThlNTRiZmZmMzhiYWEyOWI5ODJlNGRkZjY0NmQiLCJleHAiOjE3NTE2MzQwNTEsInVzZV9kdW9fY29kZV9hdHRyaWJ1dGUiOnRydWUsImNsaWVudF9pZCI6IkRJV1pZNlNIWUNTMlNNOURQMkFJIn0.5arR9E872fPbxxCSDwZdIfQv4EsxwzIjMOwYat4W2Yao_JqwNAcccMS9qsyLzrKN7zgKkiWZAWmkwFR6WfrGFA&req-trace-group=383555ee85a14103ad70ae01
+Strict-Transport-Security: max-age=31536000
+Content-Security-Policy: default-src 'self'; frame-src 'self' ; img-src 'self'  ; connect-src 'self'
+X-Content-Type-Options: nosniff
+

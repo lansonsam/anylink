@@ -1,0 +1,14 @@
+h2 304
+cache-control: no-cache,max-age=3600
+content-type: application/json
+expires: Fri, 04 Jul 2025 13:00:36 GMT
+etag: "UJjO8XP1H1qwGYccHOme7czNyOTPe/4e1QQYXrXKe3s="
+x-content-type-options: nosniff
+x-frame-options: DENY
+strict-transport-security: max-age=31536000; includeSubDomains
+report-to: {"group":"NelEcsUpload1","max_age":604800,"endpoints":[{"url":"https://ecs.nel.measure.office.net/api/report?TenantId=Edge&DestinationEndpoint=Edge-Prod-TPE31r4a&FrontEnd=AFD"}],"include_subdomains":true}
+nel: {"report_to":"NelEcsUpload1","max_age":604800,"include_subdomains":true,"failure_fraction":1.0,"success_fraction":0.001}
+x-cache: CONFIG_NOCACHE
+x-msedge-ref: Ref A: 8DA085D5AAF24A97913C4F545EB6D269 Ref B: TPE31EDGE0412 Ref C: 2025-07-04T12:00:36Z
+date: Fri, 04 Jul 2025 12:00:36 GMT
+

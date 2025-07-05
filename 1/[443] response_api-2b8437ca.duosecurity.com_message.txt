@@ -1,0 +1,13 @@
+HTTP/1.1 303 See Other
+Server: Duo/1.0
+Date: Fri, 04 Jul 2025 12:01:04 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+Location: https://cas.nau.edu/cas/login?state=TST-300250de8e54bfff38baa29b982e4ddf646d&duo_code=bp6QDKI5ME19lkzEN2kYDqfeMdKljh89
+Set-Cookie: sid|2783172f-cda3-4345-b9bb-fd6ab8b539a3=|1751630464|15d4489aec102b80d5cb29785d86c909583d66c8; expires=Thu, 04 Jul 2024 12:01:04 GMT; HttpOnly; Path=/; SameSite=None; Secure
+Set-Cookie: _xsrf|2783172f-cda3-4345-b9bb-fd6ab8b539a3=|1751630464|eba2d40a6eb879e7bfb7837114c82497a3744836; expires=Thu, 04 Jul 2024 12:01:04 GMT; HttpOnly; Path=/; SameSite=None; Secure
+Strict-Transport-Security: max-age=31536000
+Content-Security-Policy: default-src 'self'; frame-src 'self' ; img-src 'self'  ; connect-src 'self'
+X-Content-Type-Options: nosniff
+

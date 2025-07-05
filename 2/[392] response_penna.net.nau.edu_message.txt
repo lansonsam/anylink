@@ -1,0 +1,43 @@
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Transfer-Encoding: chunked
+Cache-Control: no-store
+Pragma: no-cache
+Connection: Keep-Alive
+Date: Fri, 04 Jul 2025 12:00:34 GMT
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob:; frame-ancestors 'self'; base-uri 'self'; block-all-mixed-content
+X-Aggregate-Auth: 1
+
+053E
+<?xml version="1.0" encoding="UTF-8"?>
+<config-auth client="vpn" type="auth-request" aggregate-auth-version="2">
+<opaque is-for="sg">
+<tunnel-group>nauvpn-saml</tunnel-group>
+<aggauth-handle>7260865041592658378</aggauth-handle>
+<auth-method>multiple-cert</auth-method>
+<auth-method>single-sign-on-v2</auth-method>
+<auth-method>single-sign-on-external-browser</auth-method>
+<config-hash>1739809980767</config-hash>
+</opaque>
+<auth id="main">
+<title>Login</title>
+<message>Please complete the authentication process in the AnyConnect Login window.</message>
+<banner>STOP: Before connecting you must be enrolled for Two-Step Verification. To learn more about Two-Step and how to enroll please visit https://nau.edu/Two-Step&#x0A;&#x0A;In the &#x22;Two-Step Verification&#x22; field, you will need to type the word &#x22;push&#x22; or the 6-digit verification code provided to you by either your Two-Step fob, or Duo Mobile phone app.</banner>
+<sso-v2-login>https://penna.net.nau.edu/+CSCOE+/saml/sp/login?ctx=2234726406&#x26;acsamlcap=v2</sso-v2-login>
+<sso-v2-login-final>https://penna.net.nau.edu/+CSCOE+/saml_ac_login.html</sso-v2-login-final>
+<sso-v2-token-cookie-name>acSamlv2Token</sso-v2-token-cookie-name>
+<sso-v2-error-cookie-name>acSamlv2Error</sso-v2-error-cookie-name>
+<form>
+<input type="sso" name="sso-token"></input>
+</form>
+</aut
+0012
+h>
+</config-auth>
+
+0
+

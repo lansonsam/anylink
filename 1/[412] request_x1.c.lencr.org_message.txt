@@ -1,0 +1,8 @@
+GET / HTTP/1.1
+Cache-Control: max-age = 3600
+Accept: */*
+If-Modified-Since: Mon, 28 Apr 2025 19:24:14 GMT
+If-None-Match: "680fd5de-2de"
+User-Agent: Microsoft-CryptoAPI/10.0
+Host: x1.c.lencr.org
+

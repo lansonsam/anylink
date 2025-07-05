@@ -1,0 +1,7 @@
+GET /r/gsr1.crl HTTP/1.1
+Cache-Control: max-age = 3000
+Accept: */*
+If-Modified-Since: Mon, 07 Apr 2025 13:58:00 GMT
+User-Agent: Microsoft-CryptoAPI/10.0
+Host: c.pki.goog
+

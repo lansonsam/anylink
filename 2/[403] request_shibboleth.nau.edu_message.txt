@@ -1,0 +1,16 @@
+GET /idp/profile/SAML2/Redirect/SSO?SAMLRequest=fVHLbsIwEPyVyHfiJBAQFkEiECSkPlCpeuilMslGWHLs1Luh7d%2FXCaKih%2FY6u7Pz2AXKRrdi1dHJPMF7B0jBZ6MNimGQsc4ZYSUqFEY2gIJKcVjd34kkjETrLNnSanZD%2BZ8hEcGRsoYFu03G3tL1Jo%2BLKMm3s7goJkU8H4%2Fnq8k0n6ZRmhY5C17Aod%2FPmKd7EmIHO4MkDXkoStJRNBtFk%2Bc4EVEkxukrCzY%2BgzKSBtaJqEXBOZ7U8Wg10Ck0sguh6riqWu4T1EoD7w0m%2FAkq5aAkfjg8smBrXQlDMRmrpUbo5fc%2BgTrDFVku%2BsxisOWWV7EWjJGhAfrR6rc4trwBkpUkyf3g3JpRjy%2F47Y3F5SEPvrrdZm%2B1Kr96J42kv5uNw3hAVDWqh1XRGWyhVLWCigUrre3H2oEk75tcB4wvL6K%2FH7%2F8Bg%3D%3D&RelayState=ctx%3D2234726406%26relay_sig%3DK%252F%252BlzUExx0oDDXedn2hkpsFfV6Xh9GgGd%252Bvfr4SVjVw%253D&SigAlg=http%3A%2F%2Fwww.w3.org%2F2000%2F09%2Fxmldsig%23rsa-sha1&Signature=OJfjN4irjkXjroQhxwqlvNuPgLOfvzX%2BV2ijnfh0HaoDsQlbRPtGgaYAVVZKEHWrHQEGElIUsVbcjO4GXQSXteIoB27ovB%2BJ11cjVLY5KZe5X3F1VN%2FNFu%2BSoKLo4b64pgW0XEccQ%2BSNW33DOcew%2FuBJ9lY%2BEZ4TmtBKqdpZhRS5U6YghaJ81hEQoZnRqkydEJLTkeYB3kwchA4EOF%2BzGT8Pv5zyrD7vfGM%2F4eksUs%2FsMl0dSArdltpzZc5%2BRXP58NF9UtThud0sis0lVO%2F4b2OTiiqfz6GvTFBN2EY2aBiB4Zb8dK8p23l0D6Aw6w1A8FmvUGp3oxIB8WZhBHUZFQ%3D%3D&is_passive=NULL&entity_id=NULL HTTP/1.1
+Host: shibboleth.nau.edu
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0 AnyConnect/5.1.8.122 (win)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+sec-ch-ua: "Chromium";v="138", "Microsoft Edge";v="138", "Microsoft Edge WebView2";v="138", "Not)A;Brand";v="8"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+

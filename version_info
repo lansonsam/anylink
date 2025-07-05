@@ -1,0 +1,25 @@
+AnyLink VPN Server v5.0
+
+主要更新:
+- 实现标准化OIDC认证 (RFC 6749, RFC 6750, OpenID Connect Core 1.0)
+- 采用github.com/coreos/go-oidc/v3/oidc标准库
+- 完整的JWT令牌验证和签名检查
+- 支持刷新令牌机制
+- 增强的用户组和角色权限管理
+- 改进的会话管理和安全性
+- 兼容Authing等主流OIDC提供商
+- 向后兼容OIDC v4.x配置
+
+新增功能:
+- /oidc/v5/* 标准化OIDC端点
+- 支持多种响应模式 (query, fragment, form_post)
+- 增强的错误处理和日志记录
+- 自动会话清理机制
+- 完整的OIDC发现配置支持
+
+安全改进:
+- 标准JWT签名验证
+- 时钟偏差容忍度配置
+- audience验证
+- nonce防重放攻击
+- 安全的会话状态管理

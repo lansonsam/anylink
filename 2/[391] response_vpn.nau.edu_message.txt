@@ -1,0 +1,13 @@
+HTTP/1.0 302 Temporary moved
+Content-Length: 0
+Cache-Control: no-store
+Pragma: no-cache
+Connection: Close
+Date: Fri, 04 Jul 2025 12:00:33 GMT
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob:; frame-ancestors 'self'; base-uri 'self'; block-all-mixed-content
+Location: https://penna.net.nau.edu/nauvpn
+

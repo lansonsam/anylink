@@ -1,0 +1,20 @@
+HTTP/1.1 302
+X-RequestId: a2143e86-decf-44e9-b76f-6b03273bf4d3
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Cache-Control: no-store
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google.com; object-src 'none'; worker-src 'self' blob: 'unsafe-inline';
+Set-Cookie: org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE=zh-CN; Path=/; Secure; HttpOnly; SameSite=Lax
+Location: https://api-2b8437ca.duosecurity.com/oauth/v1/authorize?scope=openid&response_type=code&redirect_uri=https://cas.nau.edu/cas/login&client_id=DIWZY6SHYCS2SM9DP2AI&request=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJkdW9fdW5hbWUiOiJkbDI1ODciLCJzY29wZSI6Im9wZW5pZCIsInJlc3BvbnNlX3R5cGUiOiJjb2RlIiwicmVkaXJlY3RfdXJpIjoiaHR0cHM6Ly9jYXMubmF1LmVkdS9jYXMvbG9naW4iLCJzdGF0ZSI6IlRTVC0zMDAyNTBkZThlNTRiZmZmMzhiYWEyOWI5ODJlNGRkZjY0NmQiLCJleHAiOjE3NTE2MzQwNTEsInVzZV9kdW9fY29kZV9hdHRyaWJ1dGUiOnRydWUsImNsaWVudF9pZCI6IkRJV1pZNlNIWUNTMlNNOURQMkFJIn0.5arR9E872fPbxxCSDwZdIfQv4EsxwzIjMOwYat4W2Yao_JqwNAcccMS9qsyLzrKN7zgKkiWZAWmkwFR6WfrGFA
+Content-Length: 0
+Date: Fri, 04 Jul 2025 12:00:51 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+

@@ -1,0 +1,105 @@
+[0;34m[INFO][0m 2025-07-04 23:33:47 - === AnyLink 构建开始 ===
+[0;34m[INFO][0m 2025-07-04 23:33:47 - 日志文件: /mnt/c/Users/lansonsam/Desktop/oa/build_logs/build_20250704_233347.log
+[0;34m[INFO][0m 2025-07-04 23:33:47 - 开始完整构建...
+[0;34m[INFO][0m 2025-07-04 23:33:47 - 开始构建前端...
+[0;34m[INFO][0m 2025-07-04 23:33:47 - 安装前端依赖...
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@achrinza/node-ipc@9.2.2',
+npm warn EBADENGINE   required: { node: '8 || 10 || 12 || 14 || 16 || 17' },
+npm warn EBADENGINE   current: { node: 'v22.16.0', npm: '10.9.2' }
+npm warn EBADENGINE }
+
+up to date in 3s
+
+126 packages are looking for funding
+  run `npm fund` for details
+[0;34m[INFO][0m 2025-07-04 23:33:50 - 构建前端项目...
+
+> anylink-web@0.1.0 build
+> vue-cli-service build
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+-  Building for production...
+ WARNING  Compiled with 2 warnings11:35:19 PM
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  js/chunk-402ed3ce.2d14f77b.js (854 KiB)
+  js/chunk-vendors.57e08fad.js (937 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.12 MiB)
+      css/chunk-vendors.6b92dc4c.css
+      js/chunk-vendors.57e08fad.js
+      css/app.6cb333ab.css
+      js/app.c2c1eab5.js
+
+
+  File                                  Size               Gzipped
+
+  ui/js/chunk-vendors.57e08fad.js       936.58 KiB         257.58 KiB
+  ui/js/chunk-402ed3ce.2d14f77b.js      853.87 KiB         293.74 KiB
+  ui/js/chunk-a9069f42.0a48da77.js      102.21 KiB         30.91 KiB
+  ui/js/chunk-5118ff42.2856a9f4.js      37.46 KiB          12.09 KiB
+  ui/js/chunk-568f35be.2156b09c.js      18.88 KiB          5.55 KiB
+  ui/js/chunk-5cdfe850.21bc0f15.js      13.28 KiB          3.33 KiB
+  ui/js/chunk-4bc7ff65.ec291408.js      11.24 KiB          2.96 KiB
+  ui/js/chunk-2d237b05.b8a92799.js      10.52 KiB          3.30 KiB
+  ui/js/app.c2c1eab5.js                 7.54 KiB           3.06 KiB
+  ui/js/chunk-3b3ffc02.02974722.js      5.70 KiB           2.07 KiB
+  ui/js/chunk-2d21406d.d8eb8f76.js      5.38 KiB           1.86 KiB
+  ui/js/chunk-0ecadc9f.dda6be6b.js      4.96 KiB           1.73 KiB
+  ui/js/chunk-55c55390.ba9bf260.js      3.75 KiB           1.23 KiB
+  ui/js/chunk-dcbf7f30.55b2ae2a.js      2.63 KiB           1.17 KiB
+  ui/js/chunk-2d0af177.3a61a03c.js      1.08 KiB           0.64 KiB
+  ui/css/chunk-vendors.6b92dc4c.css     206.21 KiB         33.53 KiB
+  ui/css/chunk-402ed3ce.3512812a.css    1.20 KiB           0.47 KiB
+  ui/css/chunk-0ecadc9f.073e5758.css    0.74 KiB           0.39 KiB
+  ui/css/chunk-a9069f42.8f1b8ab2.css    0.49 KiB           0.30 KiB
+  ui/css/chunk-3b3ffc02.49f218b3.css    0.48 KiB           0.18 KiB
+  ui/css/chunk-568f35be.f9c8791c.css    0.43 KiB           0.18 KiB
+  ui/css/chunk-55c55390.677292c8.css    0.38 KiB           0.16 KiB
+  ui/css/app.6cb333ab.css               0.36 KiB           0.26 KiB
+  ui/css/chunk-5118ff42.a9a6aaad.css    0.18 KiB           0.15 KiB
+  ui/css/chunk-4bc7ff65.fe33e199.css    0.18 KiB           0.15 KiB
+  ui/css/chunk-5cdfe850.74c393f1.css    0.10 KiB           0.10 KiB
+  ui/css/chunk-dcbf7f30.bc806032.css    0.08 KiB           0.09 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The ui directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+[0;34m[INFO][0m 2025-07-04 23:35:20 - 复制前端文件到服务端...
+[0;32m[SUCCESS][0m 2025-07-04 23:35:20 - 前端构建完成
+[0;34m[INFO][0m 2025-07-04 23:35:20 - 开始构建后端...
+[0;34m[INFO][0m 2025-07-04 23:35:20 - 版本: 5.0
+[0;34m[INFO][0m 2025-07-04 23:35:20 - 提交ID: unknown
+[0;34m[INFO][0m 2025-07-04 23:35:20 - 构建时间: 2025-07-04T23:35:20+08:00
+[0;34m[INFO][0m 2025-07-04 23:35:20 - 下载 Go 依赖...
+[0;34m[INFO][0m 2025-07-04 23:35:20 - 构建后端二进制文件...
+github.com/bjdgyc/anylink/dbdata
+github.com/bjdgyc/anylink/sessdata
+github.com/bjdgyc/anylink/cron
+github.com/bjdgyc/anylink/admin
+github.com/bjdgyc/anylink/handler
+[0;32m[SUCCESS][0m 2025-07-04 23:35:26 - 后端构建成功
+[0;34m[INFO][0m 2025-07-04 23:35:26 - 创建部署包...
+[0;34m[INFO][0m 2025-07-04 23:35:26 - 复制文件...
+[0;34m[INFO][0m 2025-07-04 23:35:27 - 创建压缩包...
+[0;32m[SUCCESS][0m 2025-07-04 23:35:29 - 部署包创建完成
+[0;34m[INFO][0m 2025-07-04 23:35:29 - 部署目录: anylink-deploy
+[0;34m[INFO][0m 2025-07-04 23:35:29 - 压缩包: anylink-deploy-5.0.tar.gz
+[0;32m[SUCCESS][0m 2025-07-04 23:35:29 - 完整构建成功
+[0;34m[INFO][0m 2025-07-04 23:35:29 - === 构建结束 ===
+[0;32m[SUCCESS][0m 2025-07-04 23:35:29 - 构建成功完成
+[0;34m[INFO][0m 2025-07-04 23:35:29 - 日志文件保存在: /mnt/c/Users/lansonsam/Desktop/oa/build_logs/build_20250704_233347.log

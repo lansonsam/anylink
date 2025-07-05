@@ -1,0 +1,12 @@
+HTTP/1.1 304 Not Modified
+Connection: close
+Cache-Control: public,max-age=900
+Content-Type: application/vnd.ms-cab-compressed
+Date: Thu, 05 Dec 2024 23:59:30 GMT
+Etag: "06cfcc54d47db1:0"
+Server: Lego Server
+X-Cache-Lookup: Cache Hit
+X-Ccc: HK
+X-Cid: 15
+X-Nws-Log-Uuid: 16711419793659725574
+
