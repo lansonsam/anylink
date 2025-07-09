@@ -1,0 +1,157 @@
+name: 构建和发布
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: '发布标签名称 (例如: v1.0.0)'
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: 设置 Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '16'
+        cache: 'npm'
+        cache-dependency-path: 'web/package-lock.json'
+
+    - name: 设置 Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.19'
+
+    - name: 获取版本信息
+      id: version
+      run: |
+        if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+          VERSION="${{ github.event.inputs.tag_name }}"
+        else
+          VERSION=${GITHUB_REF#refs/tags/}
+        fi
+        echo "VERSION=${VERSION}" >> $GITHUB_OUTPUT
+        echo "version=${VERSION#v}" > version
+
+    - name: 缓存前端依赖
+      uses: actions/cache@v4
+      with:
+        path: |
+          web/node_modules
+          ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('web/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: 缓存 Go 模块
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/go/pkg/mod
+          ~/.cache/go-build
+        key: ${{ runner.os }}-go-${{ hashFiles('server/go.sum') }}
+        restore-keys: |
+          ${{ runner.os }}-go-
+
+    - name: 构建项目
+      run: |
+        chmod +x ./build_all.sh
+        ./build_all.sh
+
+    - name: 查找生成的 tar 文件
+      id: find_tar
+      run: |
+        TAR_FILE=$(ls anylink-deploy-*.tar.gz | head -n 1)
+        echo "TAR_FILE=${TAR_FILE}" >> $GITHUB_OUTPUT
+        echo "找到的压缩包: ${TAR_FILE}"
+
+    - name: 创建 Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.version.outputs.VERSION }}
+        release_name: Release ${{ steps.version.outputs.VERSION }}
+        body: |
+          ## 更新内容
+          
+          ### 新功能
+          - 待添加
+          
+          ### 修复
+          - 待添加
+          
+          ### 改进
+          - 待添加
+          
+          ---
+          
+          ## 下载说明
+          
+          - `anylink-deploy-*.tar.gz`: 包含编译好的二进制文件和配置文件
+          
+          ## 部署说明
+          
+          1. 下载并解压部署包
+          ```bash
+          tar -xzf anylink-deploy-*.tar.gz
+          cd anylink-deploy
+          ```
+          
+          2. 配置证书和服务器参数
+          ```bash
+          # 编辑配置文件
+          vi conf/server.toml
+          ```
+          
+          3. 启动服务
+          ```bash
+          ./start.sh
+          ```
+        draft: false
+        prerelease: false
+
+    - name: 上传 Release 资源
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./${{ steps.find_tar.outputs.TAR_FILE }}
+        asset_name: ${{ steps.find_tar.outputs.TAR_FILE }}
+        asset_content_type: application/gzip
+
+    - name: 构建 Docker 镜像
+      run: |
+        docker build -t ghcr.io/${{ github.repository_owner }}/anylink:${{ steps.version.outputs.VERSION }} \
+          --build-arg CN="yes" \
+          --build-arg appVer=${{ steps.version.outputs.VERSION }} \
+          --build-arg commitId=${{ github.sha }} \
+          -f docker/Dockerfile .
+        
+        docker tag ghcr.io/${{ github.repository_owner }}/anylink:${{ steps.version.outputs.VERSION }} \
+          ghcr.io/${{ github.repository_owner }}/anylink:latest
+
+    - name: 登录 GitHub Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: 推送 Docker 镜像
+      run: |
+        docker push ghcr.io/${{ github.repository_owner }}/anylink:${{ steps.version.outputs.VERSION }}
+        docker push ghcr.io/${{ github.repository_owner }}/anylink:latest
